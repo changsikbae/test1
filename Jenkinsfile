@@ -3,7 +3,6 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'cd /etc/nginx/sites-available'
         echo 'ok build'
       }
     }
@@ -11,7 +10,8 @@ pipeline {
     stage('upload') {
       steps {
         sh 'git init'
-        //sh 'git push https://www.github.com/changsikbae/test1'
+        sh 'cd /etc/nginx/sites-available'
+        sh 'sudo git clone https://www.github.com/changsikbae/test1'
         echo 'ok upload'
       }
     }
