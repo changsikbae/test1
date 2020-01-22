@@ -11,7 +11,7 @@ pipeline {
       steps {
         sh 'git init'
         sh 'cd /etc/nginx/sites-available'
-        sh 'git clone https://www.github.com/changsikbae/test1'
+        sh 'git pull https://www.github.com/changsikbae/test1'
         echo 'ok upload'
       }
     }
