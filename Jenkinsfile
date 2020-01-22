@@ -18,7 +18,7 @@ pipeline {
 
     stage('deploy') {
       steps {
-        sh 'git clone https://www.github.com/changsikbae/test1'
+        sh 'sudo git clone https://www.github.com/changsikbae/test1'
         echo 'ok deploy'
       }
     }
