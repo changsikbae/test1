@@ -9,8 +9,9 @@ pipeline {
 
     stage('upload') {
       steps {
+        sh 'cd /etc/nginx/site-available'
         sh '''git init
-cd /etc/nginx/site-available'''
+'''
         sh 'git pull https://www.github.com/changsikbae/test1'
         echo 'ok upload'
       }
