@@ -12,7 +12,7 @@ pipeline {
         sh 'cd /etc/nginx/sites-available'
         sh '''git init
 git checkout dev'''
-        sh 'git pull https://www.github.com/changsikbae/test1'
+        sh 'git pull origin dev'
         echo 'ok upload'
       }
     }
