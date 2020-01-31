@@ -9,7 +9,6 @@ pipeline {
 
     stage('upload') {
       steps {
-        sh 'cd /etc/nginx/sites-available'
         sh '''git init
 git checkout dev'''
         sh 'git pull origin dev'
