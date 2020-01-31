@@ -9,8 +9,8 @@ pipeline {
 
     stage('upload') {
       steps {
-        sh 'git init'
-        sh 'cd /etc/nginx/sites-available'
+        sh '''git init
+cd /etc/nginx/site-available'''
         sh 'git pull https://www.github.com/changsikbae/test1'
         echo 'ok upload'
       }
@@ -19,7 +19,6 @@ pipeline {
     stage('deploy') {
       steps {
         sh 'pwd'
-        //sh 'sudo git clone https://www.github.com/changsikbae/test1'
         echo 'ok deploy'
       }
     }
