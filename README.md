@@ -7,3 +7,4 @@ test 20.01.13 jenkins
 test 20.01.31 jenkins
 test auto
 test 20.02.20 GCP cloud
+test 20.02.20 second polling SCM test
