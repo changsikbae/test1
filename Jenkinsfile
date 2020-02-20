@@ -19,7 +19,7 @@ git checkout dev'''
     stage('deploy') {
       steps {
         echo 'deploy to master'
-        sh 'git pull origin master'
+        sh 'git push origin master'
         echo 'ok deploy'
       }
     }
