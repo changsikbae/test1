@@ -18,7 +18,8 @@ git checkout dev'''
 
     stage('deploy') {
       steps {
-        sh 'pwd'
+        echo 'deploy to master'
+        sh 'git pull origin master'
         echo 'ok deploy'
       }
     }
